@@ -47,12 +47,15 @@ Subset of sample space of random experiment
 ## Discrete Random Variables
 
 ### Random Variables `(rv)`
-- `rv` denoted by $X$
-- Value denoted by $x$
+- `rv` denoted by uppercase letter, such as $X$
+- Value denoted by lower case letter, such as $x$
 - Example: $P(X=x)$
 
-### Con
+### Probability Distributions
+- `rv` $X$ associates the outcomes to a number on the number line.
+- **Probability Distribution** of `rv` $X$ is description of probabilities with possible numerical values of $X$
+- Probability distribution can be
+  1. List of possible values with probabilities
+  2. Formula used to calculate the probability (in response to `rv`)
 
-### Conditional Probability Distributions
-
-$$$$
+### Probability Mass Function
