@@ -6,6 +6,7 @@
       {
         "id": "91c2da336192d002",
         "type": "tabs",
+        "dimension": 56.611570247933884,
         "children": [
           {
             "id": "639011651a8f67d4",
@@ -24,14 +25,15 @@
       {
         "id": "3259b1f37f8b3d5a",
         "type": "tabs",
+        "dimension": 43.388429752066116,
         "children": [
           {
-            "id": "e4ee59948ff373b4",
+            "id": "faa7e8e883802112",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "README.md",
+                "file": "03 Random Variables.md",
                 "mode": "preview",
                 "source": false
               }
@@ -87,7 +89,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 282.5,
+    "collapsed": true
   },
   "right": {
     "id": "4f33a4be27bf5205",
@@ -164,11 +167,13 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "639011651a8f67d4",
+  "active": "3b4f3e338f6e1bf6",
   "lastOpenFiles": [
-    "04 Statistical Inference I.md",
-    "README.md",
     "02 Data Summary.md",
-    "03 Random Variables.md"
+    "03 Random Variables.md",
+    "B Derivation of Poisson Distribution.md",
+    "04 Statistical Inference I.md",
+    "A Derivation of Variance.md",
+    "README.md"
   ]
 }
