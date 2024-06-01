@@ -67,13 +67,13 @@ $Q_4 = 100^{th}$ percentile `(max)`
 
 <hr>
 
-$1^{st}$ Quartile: $Q_0 \rarr Q_1$
+$\displaystyle 1^{st}$ Quartile: $Q_0 \rightarrow Q_1$
 
-$2^{nd}$ Quartile: $Q_1 \rarr Q_2$
+$\displaystyle 2^{nd}$ Quartile: $Q_1 \rightarrow Q_2$
 
-$3^{rd}$ Quartile: $Q_2 \rarr Q_3$
+$\displaystyle 3^{rd}$ Quartile: $Q_2 \rightarrow Q_3$
 
-$4^{th}$ Quartile: $Q_3 \rarr Q_4$
+$\displaystyle 4^{th}$ Quartile: $Q_3 \rightarrow Q_4$
 
 Inter Quartile Range $(IQR)$ = $Q_3 - Q_1$
 
