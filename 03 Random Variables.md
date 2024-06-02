@@ -1,6 +1,6 @@
-# Random Variables
+# <u>Random Variables</u>
 
-## Random Variables and Probability
+## <u>Random Variables and Probability</u>
 
 ### Sample Spaces
 
@@ -44,7 +44,9 @@ Subset of sample space of random experiment
 - [0, 1] interval
 - $P(E)$ = sum of probabilities of outcomes in $E$
 
-## Discrete Random Variables
+<div style="page-break-after: always;"></div>
+
+## <u>Discrete Random Variables</u>
 
 ### Random Variables `(rv)`
 - `rv` denoted by uppercase letter, such as $X$
@@ -96,6 +98,7 @@ $$\sigma^2 = V(X) = E(X-\mu)^2 = \sum_x(x-\mu)^2\cdot f(x) = \sum_x x^2\cdot f(x
 [Derivation](./A%20Derivation%20of%20Variance)
 
 `variance` is the **average of the squared deviations** from the distribution mean
+<div style="page-break-after: always;"></div>
 
 ### Discrete Uniform Distribution
 
@@ -148,6 +151,8 @@ P(X=x) &= \binom n x \cdot p^x \cdot (1-p)^{n-x}\\\\
 \end{align}
 $$
 
+<div style="page-break-after: always;"></div>
+
 Probability mass function:
 $$f(x) = \frac{e^{-\lambda }\lambda^x}{x!}$$
 Mean & Variance
@@ -159,7 +164,7 @@ $$
 $$
 
 
-## Continuous Random Variables
+## <u>Continuous Random Variables</u>
 
 Number of possible value $X$ is uncountably infinite
 
@@ -186,6 +191,7 @@ $$P(x_1 \leq X \leq x_2) = P(x_1 \lt X \leq x_2) = P(x_1 \leq X \lt x_2) = P(x_1
 
 This implies that $P(X=x) = 0$
 
+
 ### Cumulative Distribution Functions
 
 $$F(x) = P(X\leq x) = \int_{-\infty}^x f(u)\, \mathrm du \text{ for } -\infty <x< \infty$$
@@ -203,6 +209,8 @@ $$
 \end{align}
 $$
 
+<div style="page-break-after: always;"></div>
+
 ### Continuous Uniform Distribution
 
 $$
@@ -213,7 +221,9 @@ f(x) &= \frac 1 {b-a} \text{ for } a \leq x \leq b\\\\
 \end{align}
 $$
 
-![](Assets/continuousUniformDistribution.png)
+<div style="display:flex;justify-content:center;align-content:center;width:100%;">
+<img src="/Assets/continuousUniformDistribution.png" height="140px">
+</div>
 
 ##### Continuous Uniform Cumulative Distribution Function
 $$
@@ -225,8 +235,9 @@ F(x) &= \frac{x-a}{b-a}\,\,\,&;&\,\,\, a \leq x \leq b\\\\
 F(x) &= 1\,\,\,&;&\,\,\, x > b\\\\
 \end{align}
 $$
-
-![](Assets/continuousUniformCDF.png)
+<div style="display:flex;justify-content:center;align-content:center;width:100%;">
+<img src="/Assets/continuousUniformCDF.png" height="140px">
+</div>
 
 ### Normal Distribution
 
@@ -237,11 +248,15 @@ $$
 f(x) = \frac 1 {\sigma\sqrt{2\pi}} e^{\frac{-(x-\mu)^2}{2\sigma^2}}
 $$
 
-![](Assets/normalDistribution.png)
+<div style="display:flex;justify-content:center;align-content:center;width:100%;">
+<img src="/Assets/normalDistribution.png" height="140px">
+</div>
 
 ##### Standard Normal Distribution
 $$\mu = 0, \sigma^2 = 1$$
 $$\Phi(z) = P(Z\leq z) = F(z) = \int_{-\infty}^{\infty}\frac 1 {\sqrt{2\pi}} e^{\frac{-x^2}{2}} \mathrm ds$$
+
+<div style="page-break-after: always;"></div>
 
 ##### Standardising
 
@@ -254,10 +269,12 @@ $Z$ is standard normal random variable
 
 $\displaystyle z = \frac {x-\mu}\sigma$, obtained by standardising $X$
 
-![](Assets/standardNormalDistribution.png)
+<div style="display:flex;justify-content:center;align-content:center;width:100%;">
+<img src="/Assets/standardNormalDistribution.png" height="140px">
+</div>
 
 
-## Normal Approximation to Binomial and Poisson Distributions
+## <u>Normal Approximation to Binomial and Poisson Distributions</u>
 
 - As their means increase, Binomial and Poisson distributions become more bell-shaped and symmetric
 - Normal distribution is a good approximation
@@ -302,9 +319,9 @@ $$
 Z = \frac{X - \lambda}{\sqrt{\lambda}}
 $$
 
-<hr>
+<div style="page-break-after: always;"></div>
 
-## More than One Random Variable and Independence
+## <u>More than One Random Variable and Independence</u>
 
 - Some random variables are not independent.
 
@@ -346,6 +363,8 @@ $$
 	- $\displaystyle V(X) = \int\limits_R x^2\cdot f_X(x) \,\mathrm dx - \mu_X^2$
 	- $\displaystyle V(Y) = \int\limits_R y^2\cdot f_Y(y) \,\mathrm dy - \mu_Y^2$
 
+<div style="page-break-after: always;"></div>
+
 ### Conditional Probability Distribution
 
 $$P(B | A) = \frac {P(A\cap B)}{P(A)}$$
@@ -374,9 +393,7 @@ If one of the following properties is true, the others will also be true and $X,
 3. $\displaystyle f_{X|y}(x) = f_X(x)$; for all $x$ and $y$ with $f_Y(y) > 0$
 4. $\displaystyle P(X \subset A, Y \subset B) = P(X \subset A) \cdot P(Y \subset B)$
 
-## Functions of Random Variables
-
-### Linear functions of Random Variables
+## <u>Functions of Random Variables</u>
 
 - A function of random variables is also a random variable
 - Given random variables $X_1, X_2, \dots, X_p$ and constants $c_1, c_2, \dots, c_p$

@@ -6,6 +6,7 @@
       {
         "id": "3259b1f37f8b3d5a",
         "type": "tabs",
+        "dimension": 47.674418604651166,
         "children": [
           {
             "id": "faa7e8e883802112",
@@ -20,20 +21,45 @@
               },
               "pinned": true
             }
+          },
+          {
+            "id": "242c3b482e6b97b7",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "04 Statistical Inference I.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
         ]
       },
       {
         "id": "bd63c561f6850e82",
         "type": "tabs",
+        "dimension": 52.32558139534884,
         "children": [
+          {
+            "id": "df0e00db442605f1",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "03 Random Variables.md",
+                "mode": "preview",
+                "source": true
+              }
+            }
+          },
           {
             "id": "93d881885af03572",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "03 Random Variables.md",
+                "file": "04 Statistical Inference I.md",
                 "mode": "preview",
                 "source": true
               }
@@ -167,10 +193,11 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "93d881885af03572",
+  "active": "faa7e8e883802112",
   "lastOpenFiles": [
-    "02 Data Summary.md",
+    "04 Statistical Inference I.md",
     "03 Random Variables.md",
+    "02 Data Summary.md",
     "Assets/standardNormalDistribution_tmp17137",
     "Assets/standardNormalDistribution.png",
     "Assets/normalDistribution_tmp9634",
@@ -186,7 +213,6 @@
     "Assets",
     "New folder",
     "B Derivation of Poisson Distribution.md",
-    "04 Statistical Inference I.md",
     "A Derivation of Variance.md",
     "README.md"
   ]
