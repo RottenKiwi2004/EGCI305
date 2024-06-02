@@ -4,38 +4,38 @@
     "type": "split",
     "children": [
       {
-        "id": "91c2da336192d002",
+        "id": "3259b1f37f8b3d5a",
         "type": "tabs",
-        "dimension": 56.611570247933884,
         "children": [
           {
-            "id": "639011651a8f67d4",
+            "id": "faa7e8e883802112",
             "type": "leaf",
+            "pinned": true,
             "state": {
               "type": "markdown",
               "state": {
                 "file": "03 Random Variables.md",
                 "mode": "source",
                 "source": true
-              }
+              },
+              "pinned": true
             }
           }
         ]
       },
       {
-        "id": "3259b1f37f8b3d5a",
+        "id": "bd63c561f6850e82",
         "type": "tabs",
-        "dimension": 43.388429752066116,
         "children": [
           {
-            "id": "faa7e8e883802112",
+            "id": "93d881885af03572",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
                 "file": "03 Random Variables.md",
                 "mode": "preview",
-                "source": false
+                "source": true
               }
             }
           }
@@ -167,10 +167,24 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "3b4f3e338f6e1bf6",
+  "active": "93d881885af03572",
   "lastOpenFiles": [
     "02 Data Summary.md",
     "03 Random Variables.md",
+    "Assets/standardNormalDistribution_tmp17137",
+    "Assets/standardNormalDistribution.png",
+    "Assets/normalDistribution_tmp9634",
+    "Assets/normalDistribution.png",
+    "New Text Document.txt",
+    "Assets/continuousUniformCDF_tmp20725",
+    "Assets/continuousUniformCDF_tmp11113",
+    "Assets/continuousUniformCDF.png",
+    "Assets/continuousUniformDistribution.png",
+    "Assets/continuousUniformDistrubution_tmp4740",
+    "Assets/psC1B1.tmp",
+    "Assets/graph.psd",
+    "Assets",
+    "New folder",
     "B Derivation of Poisson Distribution.md",
     "04 Statistical Inference I.md",
     "A Derivation of Variance.md",

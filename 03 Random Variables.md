@@ -161,3 +161,244 @@ $$
 
 ## Continuous Random Variables
 
+Number of possible value $X$ is uncountably infinite
+
+### Probability Density Function
+
+- Describes the probability distribution of a continuous random variable
+
+For continuous random variable $X$, Probability Density Function, $f(x)$ is a function such that
+
+1. $\displaystyle f(x) \geq 0$ ; function is always non-negative
+2. $\displaystyle \int_{-\infty}^{\infty}f(x)\, \mathrm dx =1$ 
+3. $\displaystyle P(a \leq X \leq b) = \int_{a}^{b}f(x)\, \mathrm dx$ 
+4. $\displaystyle f(x) = 0$ ; no area at exactly at $x$
+
+### Histograms
+
+- A continuous porbability distribution $f(x)$ is an approximation of a histogram.
+- A bar of histogram has the same area of integral of those limits
+
+### Area of a point
+If $X$ is a continuous random variable, 
+
+$$P(x_1 \leq X \leq x_2) = P(x_1 \lt X \leq x_2) = P(x_1 \leq X \lt x_2) = P(x_1 \lt X \lt x_2) = $$
+
+This implies that $P(X=x) = 0$
+
+### Cumulative Distribution Functions
+
+$$F(x) = P(X\leq x) = \int_{-\infty}^x f(u)\, \mathrm du \text{ for } -\infty <x< \infty$$
+
+<u>**Note**</u> 
+- **Probability Density Function** is the derivative of the **Cumulative Distribution Function**
+- **Cumulative Distribution Function** is the derivative of the **Probability Density Function**
+
+### Mean and Variance
+
+$$
+\begin{align}
+\mu &= E(X) &= \int_{-\infty}^\infty x\cdot f(x)\, \mathrm dx &\\\\
+\sigma^2 &= V(X) &= \int_{-\infty}^\infty (x-\mu)^2\cdot f(x)\, \mathrm dx &= \int_{-\infty}^\infty x^2\cdot f(x)\, \mathrm dx - \mu^2\\\\
+\end{align}
+$$
+
+### Continuous Uniform Distribution
+
+$$
+\begin{align}
+f(x) &= \frac 1 {b-a} \text{ for } a \leq x \leq b\\\\
+\mu = E(X) &= \frac {a+b} 2\\\\
+\sigma^2 = V(X) &= \frac{(b-a)^2} {12}
+\end{align}
+$$
+
+![](Assets/continuousUniformDistribution.png)
+
+##### Continuous Uniform Cumulative Distribution Function
+$$
+\begin{align}
+F(x) &= 0\,\,\,&;&\,\,\, x < a\\\\
+
+F(x) &= \frac{x-a}{b-a}\,\,\,&;&\,\,\, a \leq x \leq b\\\\
+
+F(x) &= 1\,\,\,&;&\,\,\, x > b\\\\
+\end{align}
+$$
+
+![](Assets/continuousUniformCDF.png)
+
+### Normal Distribution
+
+- Also known as Gaussian distribution
+- Location and spread determined by mean and standard deviation
+
+$$
+f(x) = \frac 1 {\sigma\sqrt{2\pi}} e^{\frac{-(x-\mu)^2}{2\sigma^2}}
+$$
+
+![](Assets/normalDistribution.png)
+
+##### Standard Normal Distribution
+$$\mu = 0, \sigma^2 = 1$$
+$$\Phi(z) = P(Z\leq z) = F(z) = \int_{-\infty}^{\infty}\frac 1 {\sqrt{2\pi}} e^{\frac{-x^2}{2}} \mathrm ds$$
+
+##### Standardising
+
+Suppose $X$ is normal random variable with $\mu$ and $\sigma^2$
+$$
+P(X \leq x) = P\bigg(\frac{X-\mu}\sigma \leq \frac{x-\mu}\sigma\bigg) = P(Z \leq z)
+$$
+
+$Z$ is standard normal random variable
+
+$\displaystyle z = \frac {x-\mu}\sigma$, obtained by standardising $X$
+
+![](Assets/standardNormalDistribution.png)
+
+
+## Normal Approximation to Binomial and Poisson Distributions
+
+- As their means increase, Binomial and Poisson distributions become more bell-shaped and symmetric
+- Normal distribution is a good approximation
+	- For Binomial distribution if $np > 5$ and $n(1-p) > 5$
+	- For Poisson distribution if $\lambda > 5$
+
+### Normal Approximation to Binomial
+If $X$ is binomial random variable with parameters $n$ and $p$
+
+$$
+Z = \frac{X - np}{\sqrt{np(1-p)}}
+$$
+
+To approximate a binomial probability with normal distribution
+
+$$
+P(X\leq x) = P(X \leq x + 0.5) = P\bigg(Z \leq \frac
+{x + 0.5 - np}
+{\sqrt{np (1-p)}}
+\bigg)
+$$
+$$
+P(X\lt x) = P(X \leq x - 0.5) = P\bigg(Z \leq \frac
+{x - 0.5 - np}
+{\sqrt{np (1-p)}}
+\bigg)
+$$
+
+$$
+\begin{align}
+\therefore P(X>x) = P(X\geq x) = P(X > x + 0.5)\\\\
+\therefore P(X=x) = P(x-0.5 \lt X \lt x + 0.5)\\\\
+\end{align}
+$$
+
+
+### Normal Approximation to Poisson
+
+If $X$ is binomial random variable with parameters $E(X) = \lambda$ and $V(X) = \lambda$
+
+$$
+Z = \frac{X - \lambda}{\sqrt{\lambda}}
+$$
+
+<hr>
+
+## More than One Random Variable and Independence
+
+- Some random variables are not independent.
+
+- A joint probability distribution describes the behaviour of several random variables
+- The graph of the distribution is 3D: $(x, y, f(x,y))$
+
+
+### Joint Probability Mass Function
+
+1. $\displaystyle f_{XY}(x, y) \geq 0$
+2. $\displaystyle \sum_x\sum_yf_{XY}(x, y) = 1$
+3. $\displaystyle f_{XY}(x, y) = P(X=x, Y=y)$
+
+### Joint Probability Density Function
+
+1. $\displaystyle f_{XY}(x, y) \geq 0 \text{ for all } x,y$
+2. $\displaystyle \int_{-\infty}^{\infty}\int_{-\infty}^{\infty}f_{XY}(x, y)\, \mathrm dx \mathrm dy = 1$
+3. $\displaystyle P\big((X, Y) \subset R) = \iint\limits_R f_{XY}(x,y)\, \mathrm dx \mathrm dy$
+
+### Marginal Probability Distribution
+
+- Discrete
+	- $\displaystyle f_X(x) = \sum_y f(xy)$
+	- $\displaystyle f_Y(y) = \sum_x f(xy)$
+- Continuous
+	- $\displaystyle f_X(x) = \int\limits_y f_{XY}(xy)\,\mathrm dy$
+	- $\displaystyle f_Y(y) = \int\limits_x f_{XY}(xy)\,\mathrm dx$
+
+### Mean and Variance of Marginal Distribution
+
+- Discrete
+	- $\displaystyle E(X) = \sum_R x\cdot f_X(x) = \mu_X$
+	- $\displaystyle E(Y) = \sum_R y\cdot f_Y(y) = \mu_Y$
+	- $\displaystyle V(X) = \sum_R x^2\cdot f_X(x) - \mu_X^2$
+	- $\displaystyle V(Y) = \sum_R y^2\cdot f_Y(y) - \mu_Y^2$
+- Continuous
+	- $\displaystyle E(X) = \int\limits_R x\cdot f_X(x) \,\mathrm dx = \mu_X$
+	- $\displaystyle E(Y) = \int\limits_R y\cdot f_Y(y) \,\mathrm dy = \mu_Y$
+	- $\displaystyle V(X) = \int\limits_R x^2\cdot f_X(x) \,\mathrm dx - \mu_X^2$
+	- $\displaystyle V(Y) = \int\limits_R y^2\cdot f_Y(y) \,\mathrm dy - \mu_Y^2$
+
+### Conditional Probability Distribution
+
+$$P(B | A) = \frac {P(A\cap B)}{P(A)}$$
+
+### Conditional Probability Density Function
+The conditional probability density function $Y$ given $X=x$
+$$f_{Y|x}(y) = \frac{f_{XY}(x, y)}{f_X(x)} \text{ for } f_X(x) > 0$$
+
+Which satisfies the following properties
+1. $\displaystyle f_{Y|x}(y) \geq 0$
+2. $\displaystyle \int f_{Y|x}(y)\, \mathrm dy = 1$
+3. $\displaystyle P(Y \subset B \,| \,X = x) = \int\limits_B f_{Y|x}(y)\, \mathrm dy$
+
+
+### Joint Random Variable Independence
+
+Knowledge of the values of $X$ does not change any of the probabilities associated with the values of $Y$
+
+
+### Properties of Independence
+
+If one of the following properties is true, the others will also be true and $X, Y$ are **independent**
+
+1. $\displaystyle f_{XY}(x, y) = f_X(x) \cdot f_Y(y)$
+2. $\displaystyle f_{Y|x}(y) = f_Y(y)$ ; for all $x$ and $y$ with $f_X(x) > 0$
+3. $\displaystyle f_{X|y}(x) = f_X(x)$; for all $x$ and $y$ with $f_Y(y) > 0$
+4. $\displaystyle P(X \subset A, Y \subset B) = P(X \subset A) \cdot P(Y \subset B)$
+
+## Functions of Random Variables
+
+### Linear functions of Random Variables
+
+- A function of random variables is also a random variable
+- Given random variables $X_1, X_2, \dots, X_p$ and constants $c_1, c_2, \dots, c_p$
+
+$$Y = c_1X_1 + c_2X_2+ \dots+ c_pX_p$$
+
+- $Y$ is a linear combination of $X_1, X_2, \dots, X_p$
+
+$$
+\begin{align}
+E(Y) &= c_1E(X_1) + c_2E(X_2)+ \dots+ c_pE(X_p)\\\\
+V(Y) &= c_1^2V(X_1) + c_2^2V(X_2)+ \dots+ c_p^2V(X_p) + 2\sum_{i<j}\sum c_ic_j \mathrm{cov}(X_iX_j)
+\end{align}
+$$
+
+If $X_1, X_2, \dots, X_p$ are independent, $\mathrm{cov}(X_iX_j) = 0$
+$$V(Y) = c_1^2V(X_1) + c_2^2V(X_2)+ \dots+ c_p^2V(X_p)$$
+
+<u>**Note**</u> $\mathrm{cov}(X,Y)$ or $\sigma_{XY}$ is the covariance between the random  variables $X$ and $Y$
+
+### Mean and Variance on Average
+
+If $\displaystyle \bar X = \frac{X_1+ X_2+ \dots+ X_p}{p}$ and $E(X_i) = \mu$, then $\displaystyle E(\bar X) = \frac{p\cdot\mu}p = \mu$
+
+If $X_i$ are independent with $\displaystyle V(X_i) = \sigma^2$, then $\displaystyle V(\bar X) = \frac{p\cdot\sigma^2}{p^2} = \frac {\sigma^2}{p}$
